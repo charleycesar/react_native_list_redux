@@ -9,12 +9,12 @@ import LibraryList from './components/LibraryList';
 const App = () => {
   return (
     <Provider store={createStore(reducers)}>
-        <View>
-            <Header headerText={'List Redux'}/>
+        <View style={{ flex: 1 }}>
+            <Header headerText={'List Redux'} />
             <LibraryList />
         </View>
     </Provider>
-  )
-}
+  );
+};
 
 export default App;
